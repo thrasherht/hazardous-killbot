@@ -124,7 +124,7 @@ export class ZKillSubscriber {
                             break;
                         case SubscriptionType.ALLIANCE:
                             if (data.victim.alliance_id === subscription.id) {
-                                requireSend = true;
+                                requireSend = false;
                                 color = 'RED';
                             }
                             if (!requireSend) {
